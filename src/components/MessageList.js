@@ -12,7 +12,7 @@ class MessageList extends Component {
 	readData(){
 		return this.props.db.database().ref('/messages').once('value').then(function(snapshot) {
 		  //var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
-		  alert(snapshot.val());
+		  console.log(snapshot.val());
 		  
 		});
 	}
